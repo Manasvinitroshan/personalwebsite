@@ -5,57 +5,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Style/styles.css">
-    <title>Manas Personal Portfolio</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family: "Nunito", sans-serif;
+        }
+
+        :root {
+            --bg-color: #191f36;
+            --snd-bf-color: #262b40;
+            --text-color: #fff;
+            --main-color: #59B2F4;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 10rem 9% 2rem;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem 9%;
+            background: var(--bg-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            font-weight: 700;
+            cursor: default;
+        }
+
+        .navbar a {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-left: 4rem;
+            font-weight: 700;
+        }
+
+        .navbar a.active,
+        .navbar a.hover {
+            color: var(--text-color);
+        }
+
+        #menu-icon {
+            font-size: 3.6rem;
+            color: var(--text-color);
+            display: none;
+        }
+
+        .home{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .home-content h3{
+
+            font-size: 3.2rem;
+            font-weight: 700;
+        }
+
+
+    </style>
+
+<link rel="stylesheet" href="style.css">
+<title>Manas Personal Portfolio</title>
 </head>
 
 <body>
 
-    <header class="header">
+<header class="header">
+    <a href="#" class="logo">Manas Singh</a>
+    <i class="fa-light fa-bars" id="menu-icon"></i>
 
-        <a href="#" class="logo">Manas Singh</a>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-        <i class="fa-light fa-bars" id="menu-icon"></i>
-
-
-        <nav class="navbar">
-
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section class="home" id="home">
-
-        <div class="home-content">
-            <h3>Hi</h3>
-            <h1>I am Manas Singh</h1>
-            <h3>I am a AI/ML Engineer and a Full Stack Developer</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nihil inventore voluptas assumenda
-                deserunt nisi quidem quo quas dolorum dignissimos illo, alias doloribus temporibus. Magni et voluptatem
-                esse dolore nulla!</p>
-            <div class="social-media">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <a href="#" class="btn">Download Resume</a>
-
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hi</h3>
+        <h1>I am Manas Singh</h1>
+        <h3>I am a AI/ML Engineer and a Full Stack Developer</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nihil inventore voluptas assumenda
+            deserunt nisi quidem quo quas dolorum dignissimos illo, alias doloribus temporibus. Magni et voluptatem
+            esse dolore nulla!</p>
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
+        <a href="#" class="btn">Download Resume</a>
+    </div>
 
-        <div class="home-img">
-            <img src="img/manas1.bb7ede83bb2d613d3c06.png" alt="Manas Singh"/>
-        </div>
-    </section>
+    <div class="home-img">
+        <img src="img/manas1.bb7ede83bb2d613d3c06.png" alt="Manas Singh"/>
+    </div>
+</section>
 
-    <script src="JS/main.js"></script>
-
+<script src="JS/main.js"></script>
 </body>
 
 </html>
