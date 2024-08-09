@@ -59,6 +59,11 @@
             z-index: 100;
         }
 
+        .white{
+
+            color: white;
+        }
+
         .logo {
             font-size: 2.5rem;
             color: var(--text-color);
@@ -229,7 +234,106 @@ font-size: 1.6rem;
 margin: 2rem 0 3rem;
 }
 
+.services h2{
 
+    margin-bottom: 5rem;
+}
+
+.services-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box{
+
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--main-color);
+    transition: 0.5 ease;
+}
+
+
+.services-container .services-box :hover{
+
+    border-color: var(--snd-bg-color);
+    transform: scale(1.02);
+}
+
+.services-box i{
+
+    font-size: 7rem;
+    color: var(--main-color);
+
+
+}
+
+.services-box h3{
+
+font-size: 2.6rem;
+
+
+
+}
+
+.services-box p{
+
+font-size: 2.6rem;
+margin: 1rem 0 3rem;
+
+
+
+
+}
+
+
+.portfolio{
+
+    background: var(--snd-bg-color);
+}
+
+.portfolio h2{
+
+    margin-bottom: 4rem;
+}
+
+.portfolio-container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+
+}
+
+.portfolio-container .portfolio-box{
+
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+
+}
+
+.portfolio-box img{
+
+    width: 100%;
+    transition: 0.5 ease;
+    opacity: 0.7;
+}
+
+.portfolio-box img:hover{
+
+    transform: scale(1.1);
+}
         
 
 
@@ -258,7 +362,7 @@ margin: 2rem 0 3rem;
     <div class="home-content">
         <h3>Hi</h3>
         <h1>My name is Manas Singh</h1>
-        <h3>and I'm a<span> AI/ML Engineer and Full Stack Developer</span></h3>
+        <h3>and I'm a<span> Software Engineer</span></h3>
         
         <div class="social-media">
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -291,9 +395,92 @@ margin: 2rem 0 3rem;
 <section class="services" id="services">
 
     <h2>My <span>Services</span></h2>
-    <div class="service-container">
-        <div class="services-box"></div>
+    <div class="services-container">
+        <div class="services-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat iure, molestiae explicabo voluptatum qui, ipsum quibusdam velit eius perspiciatis amet libero consectetur labore dolores doloremque, quis aut quisquam nam. Animi?</p>
+            <a href="#" class="btn">Read More</a>
+
+        </div>
+
+          <div class="services-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat iure, molestiae explicabo voluptatum qui, ipsum quibusdam velit eius perspiciatis amet libero consectetur labore dolores doloremque, quis aut quisquam nam. Animi?</p>
+            <a href="#" class="btn">Read More</a>
+
+        </div>
+
+
+
+          <div class="services-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat iure, molestiae explicabo voluptatum qui, ipsum quibusdam velit eius perspiciatis amet libero consectetur labore dolores doloremque, quis aut quisquam nam. Animi?</p>
+            <a href="#" class="btn">Read More</a>
+
+        </div>
     </div>
+</section>
+
+<section class="Portfolio" id="Portfolio">
+
+    <h2 class="heading">My <span>Projects</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+
+            <img src="img/tta.png" alt="TTA Website">
+            <div class="portfolio-layer">
+                <h4>Professional Engineering Fraternity Website</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas commodi officia accusantium! Ipsa officia ipsum doloremque, iusto necessitatibus esse asperiores vero blanditiis consequatur voluptates aut ex porro cumque nulla?</p>
+                <i class="fa-solid fa-up-right-from-square"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-box">
+
+            <img src="img/tta.png" alt="TTA Website">
+            <div class="portfolio-layer">
+                <h4>Professional Engineering Fraternity Website</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas commodi officia accusantium! Ipsa officia ipsum doloremque, iusto necessitatibus esse asperiores vero blanditiis consequatur voluptates aut ex porro cumque nulla?</p>
+                <i class="fa-solid fa-up-right-from-square"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-box">
+
+            <img src="img/tta.png" alt="TTA Website">
+            <div class="portfolio-layer">
+                <h4>Professional Engineering Fraternity Website</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas commodi officia accusantium! Ipsa officia ipsum doloremque, iusto necessitatibus esse asperiores vero blanditiis consequatur voluptates aut ex porro cumque nulla?</p>
+                <i class="fa-solid fa-up-right-from-square"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="portfolio-box">
+
+            <img src="img/tta.png" alt="TTA Website">
+            <div class="portfolio-layer">
+                <h4>Professional Engineering Fraternity Website</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas commodi officia accusantium! Ipsa officia ipsum doloremque, iusto necessitatibus esse asperiores vero blanditiis consequatur voluptates aut ex porro cumque nulla?</p>
+                <i class="fa-solid fa-up-right-from-square"></i>
+
+            </div>
+
+        </div>
+    </div>
+
 </section>
 
 <script src="JS/main.js"></script>
