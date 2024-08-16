@@ -25,10 +25,10 @@
         }
 
         :root {
-            --bg-color: #191f36;
-            --snd-bg-color: #262b40;
-            --text-color: #fff;
-            --main-color: #59B2F4;
+            --bg-color: white;
+            --snd-bg-color:;
+            --text-color: black;
+            --main-color: black;
         }
 
         html {
@@ -167,7 +167,7 @@ transform:translateY(-2.4rem)
             border: 0.2rem solid var(--main-color);
             margin: 3rem 1.5rem 3rem 0;
             transition: .5s ease;
-            color: #59B2F4;
+            color: black;
             border-radius: 50%;
         }
 
@@ -239,6 +239,7 @@ margin: 2rem 0 3rem;
 .services h2{
 
     margin-bottom: 5rem;
+    font-size: 4.5rem;
 }
 
 .services-container{
@@ -271,7 +272,7 @@ margin: 2rem 0 3rem;
 .services-box i{
 
     font-size: 7rem;
-    color: var(--main-color);
+    color: white;
 
 
 }
@@ -344,7 +345,7 @@ margin: 1rem 0 3rem;
    left: 0;
    width: 100%;
    height: 100%;
-   background: linear-gradient(rgba(0,0,0,0.1), var(--main-color));
+   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 1));
    display: flex;
    justify-content: center;
    align-items: center;
@@ -626,6 +627,39 @@ font-size: 5rem;
 }
 
 
+.services {
+    min-height: 10vh;
+    padding: 10rem 5% 5rem; /* Adjusted padding for better spacing */
+    text-align: center;
+    background-color: var(--bg-color); /* Light background color for contrast */
+}
+
+.services .heading {
+    font-size: 2.5em;
+    margin-bottom: 2rem; /* Space below the heading */
+}
+
+
+
+.services .service-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Space between logos */
+}
+
+.services .logo {
+    width: 50px; /* Increased size for better visibility */
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.services .logo:hover {
+    transform: scale(1.1); /* Slightly enlarges logo on hover */
+}
+
+
+
 
         
 
@@ -645,7 +679,7 @@ font-size: 5rem;
     <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="#services">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -680,98 +714,171 @@ font-size: 5rem;
 
         <h2 class="heading">About <span> Me</span></h2>
         <h3>Software Engineer</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, saepe? Minus enim nobis error, corrupti delectus similique, aspernatur ea iste unde aliquid, placeat sit dolore adipisci voluptas reiciendis saepe suscipit.</p>
-        <a href="#" class="btn">Read More</a>
+        <p>Hi, I’m Manas Singh, a senior at UTD pursuing a Bachelor’s in Software Engineering with a focus on Machine Learning and AI, graduating in 2025. I specialize in full-stack development and generative AI. I’m passionate about leveraging technology to create innovative solutions and am actively seeking tech roles to apply my skills and contribute to exciting projects in the field.</p>
+        <a href="#" class="btn">Reach Me</a>
     </div>
 </section>
 
 <section class="services" id="services">
-
-    <h2>My <span>Services</span></h2>
-    <div class="services-container">
-        <div class="services-box">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat iure, molestiae explicabo voluptatum qui, ipsum quibusdam velit eius perspiciatis amet libero consectetur labore dolores doloremque, quis aut quisquam nam. Animi?</p>
-            <a href="#" class="btn">Read More</a>
-
-        </div>
-
-          <div class="services-box">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat iure, molestiae explicabo voluptatum qui, ipsum quibusdam velit eius perspiciatis amet libero consectetur labore dolores doloremque, quis aut quisquam nam. Animi?</p>
-            <a href="#" class="btn">Read More</a>
-
-        </div>
-
-
-
-          <div class="services-box">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat iure, molestiae explicabo voluptatum qui, ipsum quibusdam velit eius perspiciatis amet libero consectetur labore dolores doloremque, quis aut quisquam nam. Animi?</p>
-            <a href="#" class="btn">Read More</a>
-
-        </div>
-    </div>
+    <h2 class="heading" style="font-size: 2.5em; text-align: center;">My <span>Skills</span></h2>
+    <p align="center" style="margin-top: 20px;">
+        <a href="https://aws.amazon.com" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+        </a>
+        <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/>
+        </a>
+        <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
+        </a>
+        <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
+        </a>
+        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+        </a>
+        <a href="https://dart.dev" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/>
+        </a>
+        <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
+            <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/>
+        </a>
+        <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
+        </a>
+        <a href="https://expressjs.com" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/>
+        </a>
+        <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/>
+        </a>
+        <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/>
+        </a>
+        <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/>
+        </a>
+        <a href="https://flutter.dev" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/>
+        </a>
+        <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+        </a>
+        <a href="https://heroku.com" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/>
+        </a>
+        <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+        </a>
+        <a href="https://www.java.com" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+        </a>
+        <a href="https://kotlinlang.org" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/>
+        </a>
+        <a href="https://kubernetes.io" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/>
+        </a>
+        <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+        </a>
+        <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
+        </a>
+        <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
+        </a>
+        <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+            <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/>
+        </a>
+        <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
+        </a>
+        <a href="https://opencv.org/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/>
+        </a>
+        <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/>
+        </a>
+        <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/>
+        </a>
+        <a href="https://www.python.org" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+        </a>
+        <a href="https://pytorch.org/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/>
+        </a>
+        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+        </a>
+        <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
+            <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/>
+        </a>
+        <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/>
+        </a>
+        <a href="https://spring.io/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/>
+        </a>
+        <a href="https://swift.org" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/>
+        </a>
+        <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/>
+        </a>
+        <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
+        </a>
+        <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+        </a>
+        <a href="https://cassandra.apache.org/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/apache_cassandra/apache_cassandra-icon.svg" alt="cassandra" width="40" height="40"/>
+        </a>
+    </p>
 </section>
 
 <section class="portfolio" id="portfolio">
 
     <h2 class="heading">My <span>Projects</span></h2>
     <div class="portfolio-container">
-        <div class="portfolio-box">
-
-            <img src="img/tta.png" alt="TTA Website">
-            <div class="portfolio-layer">
-                <h4>Professional Engineering Fraternity Website</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas commodi officia accusantium! Ipsa officia ipsum doloremque, iusto necessitatibus esse asperiores vero blanditiis consequatur voluptates aut ex porro cumque nulla?</p>
-                <i class="fa-solid fa-up-right-from-square"></i>
-
+        <a href="https://www.ttautd.com/" style="color:white">
+            <div class="portfolio-box">
+                <img src="img/tta.png" alt="TTA Website">
+                <div class="portfolio-layer">
+                    <h4>Professional Engineering Fraternity Website</h4>
+                    <p>The Theta Tau Alpha Fraternity Website aimed to create a dynamic and engaging online platform that served as the digital hub for members, alumni, and prospective members of the Theta Tau Alpha fraternity. The project was made using JavaScript, TailwindCSS, and React.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
             </div>
+        </a>
 
-        </div>
 
-
-        <div class="portfolio-box">
-
-            <img src="img/tta.png" alt="TTA Website">
-            <div class="portfolio-layer">
-                <h4>Professional Engineering Fraternity Website</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas commodi officia accusantium! Ipsa officia ipsum doloremque, iusto necessitatibus esse asperiores vero blanditiis consequatur voluptates aut ex porro cumque nulla?</p>
-                <i class="fa-solid fa-up-right-from-square"></i>
-
+        <a href="http://localhost:8501/" style="color:white">
+            <div class="portfolio-box">
+                <img src="img/Screenshot 2024-08-16 at 2.17.12 AM.png" alt="TTA Website">
+                <div class="portfolio-layer">
+                    <h4>VitalImage Analytics</h4>
+                    <p>A Medical AI Assistant using Google Gemini AI, Streamlit, and Python, deployed on Docker. Analyzes medical images to provide insights into conditions.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
             </div>
+        </a>
+        
 
-        </div>
+
+        
 
 
-        <div class="portfolio-box">
-
-            <img src="img/tta.png" alt="TTA Website">
-            <div class="portfolio-layer">
-                <h4>Professional Engineering Fraternity Website</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas commodi officia accusantium! Ipsa officia ipsum doloremque, iusto necessitatibus esse asperiores vero blanditiis consequatur voluptates aut ex porro cumque nulla?</p>
-                <i class="fa-solid fa-up-right-from-square"></i>
-
-            </div>
-
-        </div>
+       
 
 
 
-        <div class="portfolio-box">
-
-            <img src="img/tta.png" alt="TTA Website">
-            <div class="portfolio-layer">
-                <h4>Professional Engineering Fraternity Website</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas commodi officia accusantium! Ipsa officia ipsum doloremque, iusto necessitatibus esse asperiores vero blanditiis consequatur voluptates aut ex porro cumque nulla?</p>
-                <i class="fa-solid fa-up-right-from-square"></i>
-
-            </div>
-
-        </div>
+       
     </div>
 
 </section>
