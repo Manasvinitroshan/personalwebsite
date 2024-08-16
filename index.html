@@ -524,7 +524,7 @@ margin: 1rem 0 3rem;
     }
 
     .navbar{
-
+        
         position: absolute;
         top: 100%;
         left: 0;
@@ -538,7 +538,14 @@ margin: 1rem 0 3rem;
 
     .navbar.active{
 
+        display: block !important;
+    }
+
+    .navbar a{
+
         display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
     }
 
     .home{
@@ -659,6 +666,31 @@ font-size: 5rem;
     transform: scale(1.1); /* Slightly enlarges logo on hover */
 }
 
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-icons a {
+    flex: 1 0 40px; 
+}
+
+.skills-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.skills-icons img {
+    margin: 5px;
+}
+
+.skills-icons a:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
 
 
 
@@ -675,7 +707,7 @@ font-size: 5rem;
 
 <header class="header">
     <a href="#" class="logo">Manas Singh</a>
-    <i class="fa-light fa-bars" id="menu-icon"></i>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
 
     <nav class="navbar">
         <a href="#home" class="active">Home</a>
@@ -722,7 +754,7 @@ font-size: 5rem;
 
 <section class="services" id="services">
     <h2 class="heading" style="font-size: 2.5em; text-align: center;">My <span>Skills</span></h2>
-    <p align="center" style="margin-top: 20px;">
+    <p align="center" class="skills-icons" style="margin-top: 20px;">
         <a href="https://aws.amazon.com" target="_blank" rel="noreferrer">
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
         </a>
@@ -917,7 +949,9 @@ font-size: 5rem;
     </div>
 </footer>
 
-<script src="JS/main.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+
 </body>
 
 </html>

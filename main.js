@@ -25,5 +25,25 @@ window.onscroll = () => {
             });
         }
     });
+
+    // sticky navbar
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    // remove toggle icon and navbar
+    menuIcon.classList.remove('fa-xmark');
+    navbar.classList.remove('active');
 };
 
+/*=================== scroll reveal ===================*/
+
+ScrollReveal({
+    distance: '80px',
+    duration: 1500,
+    delay: 150,
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
